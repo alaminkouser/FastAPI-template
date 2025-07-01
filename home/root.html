@@ -11,11 +11,7 @@
 
 <body>
 {% include "nav.html" %}
-{% if request.path.endswith("/") %}
 {% include request.path + "index.html" %}
-{% else %}
-{% include request.path %}
-{% endif %}
 {% include "footer.html" %}
 </body>
 
